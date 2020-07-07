@@ -9,13 +9,13 @@ module.exports = {
         links: [
           {
             title: "Doc 1",
-            url: "/doc1"
+            url: "/doc1",
           },
           {
             title: "Doc 2",
-            url: "/doc2"
-          }
-        ]
+            url: "/doc2",
+          },
+        ],
       },
       footer: {
         copyright: "yoursite.com",
@@ -25,63 +25,63 @@ module.exports = {
             links: [
               {
                 title: "Link 1",
-                url: "#"
+                url: "#",
               },
               {
                 title: "Link 2",
-                url: "#"
+                url: "#",
               },
               {
                 title: "Link 3",
-                url: "#"
-              }
-            ]
+                url: "#",
+              },
+            ],
           },
           {
             heading: "Column 2",
             links: [
               {
                 title: "Link A",
-                url: "#"
+                url: "#",
               },
               {
                 title: "Link B",
-                url: "#"
+                url: "#",
               },
               {
                 title: "Link C",
-                url: "#"
-              }
-            ]
+                url: "#",
+              },
+            ],
           },
           {
             heading: "Column 3",
             links: [
               {
                 title: "Link x",
-                url: "#"
+                url: "#",
               },
               {
                 title: "Link y",
-                url: "#"
+                url: "#",
               },
               {
                 title: "Link z",
-                url: "#"
-              }
-            ]
-          }
-        ]
-      }
+                url: "#",
+              },
+            ],
+          },
+        ],
+      },
     },
     templates: {
       home: {
         totalPosts: 3,
-        template: "home"
+        template: "home",
       },
       pages: {
         path: "/content/pages/",
-        template: "page"
+        template: "page",
       },
       posts: {
         path: "/content/posts/",
@@ -89,21 +89,21 @@ module.exports = {
         template: "post",
         filters: {
           tag: {
-            pathPrefix: "tag",
+            pathPrefixTag: "tag",
             template: "tag",
             totalPosts: 3,
             pagination: {
               template: "resultsTag",
-              resultsPerPage: 6
-            }
-          }
+              resultsPerPage: 6,
+            },
+          },
         },
         pagination: {
           template: "resultsAll",
-          resultsPerPage: 6
-        }
-      }
-    }
+          resultsPerPage: 6,
+        },
+      },
+    },
   },
   plugins: [
     { resolve: `gatsby-theme-sky-lite` },
@@ -116,8 +116,8 @@ module.exports = {
         background_color: `rebeccapurple`,
         theme_color: `rebeccapurple`,
         display: `standalone`,
-        icon: `src/images/favicon.png`
-      }
-    }
-  ]
+        icon: `src/images/favicon.png`,
+      },
+    },
+  ],
 };
